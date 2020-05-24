@@ -89,24 +89,26 @@
 			<a href="#">Поиск гостиницы в седоне</a>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<p>
-					<label>
-						Дата заезда:<input type="text" name="date_checkin" placeholder="24 Апреля 2017">
-					</label>
+					<label for="date_checkin">Дата заезда:</label>
+					<input type="text" id="date_checkin" name="date_checkin" placeholder="24 Апреля 2017">
+					<button type="button" aria-label="Календарь"></button>
 				</p>
 				<p>
-					<label>
-						Дата выезда:<input type="text" name="date_checkout" placeholder="4 Июля 2017">
-					</label>
+					<label for="date_checkout">Дата выезда:</label>
+					<input type="text" id="date_checkout" name="date_checkout" placeholder="4 Июля 2017">
+					<button type="button" aria-label="Календарь"></button>
 				</p>
 				<p>
-					<label>
-						Взрослые:<input type="text" name="adults" placeholder="2">
-					</label>
+					<label for="adults">Взрослые:</label>
+					<button type="button" aria-label="Уменьшить">-</button>
+					<input type="text" id="adults" name="adults" placeholder="2">
+					<button type="button" aria-label="Увеличить">+</button>
 				</p>
 				<p>
-					<label>
-						Дети:<input type="text" name="kids" placeholder="0">
-					</label>
+					<label for="kids">Дети:</label>
+					<button type="button" aria-label="Уменьшить">-</button>
+					<input type="text" id="kids" name="kids" placeholder="0">
+					<button type="button" aria-label="Увеличить">+</button>
 				</p>
 				<button type="submit">Найти</button>
 			</form>
