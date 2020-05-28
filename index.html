@@ -3,15 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
-	<nav>
+	<nav class="main-navigation">
 		<a>
 			<img src="img/logo.svg" alt="Логотип Седона">
 		</a>
-		<ul>
+		<ul class="site-navigation">
 			<li><a href="#">Информация</a></li>
 			<li><a href="#">Фото и видео</a></li>
 			<li><a href="#">Карта штата</a></li>
@@ -21,12 +24,12 @@
 </header>
 
 <main>
-	<section>
+	<section class="welcome">
 		<img src="img/welcome.svg" alt="Welcome to the gorgeous Sedona">
 	</section>
-	<section>
-		<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+	<section class="sedona">
+		<h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+		<p class="light-gray-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 	</section>
 	<section>
 		<ol>
@@ -82,35 +85,35 @@
 			</li>
 		</ol>
 	</section>
-	<section>
-		<p>Заинтересовались?<p>
-		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+	<section class="hotel-search">
+			<p class="interested">Заинтересовались?<p>
+			<p class="light-gray-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		<div>
-			<a href="#">Поиск гостиницы в седоне</a>
-			<form action="https://echo.htmlacademy.ru" method="post">
+			<a href="#" class="hotel-search-link">Поиск гостиницы в седоне</a>
+			<form action="https://echo.htmlacademy.ru" class="hotel-search-form"  method="post">
 				<p>
-					<label for="date_checkin">Дата заезда:</label>
-					<input type="text" id="date_checkin" name="date_checkin" placeholder="24 Апреля 2017">
+					<label for="date_checkin" class="bold">Дата заезда:</label>
+					<input type="text" class="input" id="date_checkin" name="date_checkin" placeholder="24 Апреля 2017">
 					<button type="button" aria-label="Выбрать дату заезда"></button>
 				</p>
 				<p>
-					<label for="date_checkout">Дата выезда:</label>
-					<input type="text" id="date_checkout" name="date_checkout" placeholder="4 Июля 2017">
+					<label for="date_checkout" class="bold">Дата выезда:</label>
+					<input type="text" class="input" id="date_checkout" name="date_checkout" placeholder="4 Июля 2017">
 					<button type="button" aria-label="Выбрать дату выезда"></button>
 				</p>
 				<p>
-					<label for="adults">Взрослые:</label>
+					<label for="adults" class="bold">Взрослые:</label>
 					<button type="button" aria-label="Уменьшить">-</button>
-					<input type="text" id="adults" name="adults" placeholder="2">
+					<input type="text" class="input" id="adults" name="adults" placeholder="2">
 					<button type="button" aria-label="Увеличить">+</button>
 				</p>
 				<p>
-					<label for="kids">Дети:</label>
+					<label for="kids" class="bold">Дети:</label>
 					<button type="button" aria-label="Уменьшить">-</button>
-					<input type="text" id="kids" name="kids" placeholder="0">
+					<input type="text" class="input" id="kids" name="kids" placeholder="0">
 					<button type="button" aria-label="Увеличить">+</button>
 				</p>
-				<button type="submit">Найти</button>
+				<button type="submit" class="button-search">Найти</button>
 			</form>
 		</div>
 	</section>
@@ -120,14 +123,14 @@
 </main>
 
 <footer>
-	<section>
-		<h2>Связаться с нами</h2>
+	<section class="contacts">
+		<h2 class="visually-hidden">Связаться с нами</h2>
 		<a href="#">#VISITSEDONA</a>
 		<a href="#">ТЕЛ: +7(495)666-01-66</a>
 	</section>
-	<section>
-		<h2>Давайте дружить!</h2>
-		<ul>
+	<section class="social">
+		<h2 class="visually-hidden">Давайте дружить!</h2>
+		<ul class="social-list">
 			<li>
 				<a href="#" aria-label="Перейти в Twitter"><img src="img/twitter.svg" alt="Twitter"></a>
 			</li>
@@ -139,7 +142,7 @@
 			</li>
 		</ul>
 	</section>
-	<section>
+	<section class="credits">
 		<a href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Academy">Website by <img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a>
 	</section>
 </footer>
