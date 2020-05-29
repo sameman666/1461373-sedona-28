@@ -15,78 +15,82 @@
 	--brown: #766357;
 	--dark-brown: #604e43;
 	--extra-dark-brown: #503e33;
+	--opacity-black: rgba(0, 0, 0, 0.3);
 }
 
 body {
-  min-width: 1220px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 400;
-  color: var(--black);
-  text-transform: uppercase;
-  background-color: var(--white);
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 400;
+	color: var(--black);
+	text-transform: uppercase;
+	background-color: var(--extra-light-gray);
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
-h1 {
+.container {
+	background-color: var(--white);
+}
+.title {
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
 	padding-top: 99px;
 }
 
-p {
+.paragraph {
 	text-align: center;
 	font-size: 14px;
 	line-height: 26px;
 }
 
 .main-navigation {
-  font-size: 14px;
+	font-size: 14px;
 	font-weight: bold;
-  line-height: 26px;
-  color: var(--black);
-  background-color: var(--white);
+	line-height: 26px;
+	color: var(--black);
+	background-color: var(--white);
 }
 
 .site-navigation {
-  list-style: none;
-	
+	list-style: none;
 }
 
 .site-navigation a {
-  color: var(--black);
+	color: var(--black);
 }
 
 .site-navigation a:hover {
-  color: var(--blue);
+	color: var(--blue);
+}
+
+.site-navigation a:active {
+	color: var(--opacity-black);
+}
+
+.active-page a{
+	color: var(--brown);
 }
 
 .welcome {
 	text-align: center;
-	background-image: url("../img/background.jpg");
-	background-position: center;
-  background-repeat: no-repeat;
+	background-image: url("../img/white_mask.svg"), url("../img/background.jpg");
+	background-position: bottom, center;
+	background-repeat: no-repeat, no-repeat;
 	padding-top: 77px;
 	padding-bottom: 86px;
-}
-
-.sedona {
-	height: 272px;
-	background-image: url("../img/white_mask.svg");
-	background-position: center;
-  background-repeat: no-repeat;
 }
 
 .hotel-search {
@@ -94,22 +98,10 @@ p {
 	text-align: center;
 }
 
-.interested {
+.hotel-search-title {
 	font-size: 30px;
 	font-weight: bold;
 	padding-top: 61px;
-}
-
-
-.hotel-search-link {
-	text-align: center;
-	background-color: var(--brown);
-	color: var(--white);
-	padding: 30px 124px 30px 125px;
-	font-weight: bold;
-	font-size: 21px;
-	line-height: 26px;
-	margin: 100px;
 }
 
 .hotel-search-form {
@@ -118,16 +110,17 @@ p {
 
 .input {
 	background-color: var(--extra-light-gray);
-}
-
-.bold {
 	font-weight: bold;
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--black);
+	text-transform: uppercase;
 }
 
-.button-search {
-	background-color: var(--blue);
-	color: var(--white);
-	padding: 16px 182px 16px 181px;
+.search-form-label {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .visually-hidden {
@@ -154,11 +147,19 @@ p {
 	list-style: none;
 }
 
-.found-hotels-list h3 a{
+.hotel-name a{
 	color: var(--black);
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+}
+
+.hotel-name a:hover{
+	color: var(--blue);
+}
+
+.hotel-name a:active{
+	color: var(--opacity-black);
 }
 
 .light-gray-text {
@@ -166,27 +167,64 @@ p {
 	font-size: 14px;
 	line-height: 21px;
 	padding-bottom: 50px;
+	text-align: center;
 }
 
-.details {
-	background-color: var(--blue);
+
+.btn {
+	display: inline-block;
 	color: var(--white);
-	padding: 3px 16px 3px 17px;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 21px;
+	text-align: center;
 }
 
-.reserve {
+.btn-primary,
+.btn-secondary {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.btn-primary {
 	background-color: var(--brown);
-	padding: 3px 17px 3px 16px;
-	color: var(--white);
-	font-weight: bold;
+}
+
+.btn-secondary {
+	background-color: var(--blue);
+	text-transform: uppercase; 
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+color: #fff;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary:hover {
+	background-color: var(--dark-brown);
+}
+
+.btn-primary:active {
+	background-color: var(--extra-dark-brown);
+}
+
+.btn-secondary:hover {
+	background-color: var(--dark-blue);
+}
+
+.btn-secondary:active {
+	background-color: var(--extra-dark-blue);
+}
+
+.hotel-link {
 	font-size: 14px;
 	line-height: 21px;
 }
 
-.sedona p {
+.intro p {
 	padding-top: 17px;
 }
 
