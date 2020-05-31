@@ -235,6 +235,7 @@ color: #fff;
 	line-height: 21px;
 	color: var(--dark-gray);
 	padding: 3px 12px 3px 15px;
+	font-weight: normal;
 }
 
 .social-icon {
