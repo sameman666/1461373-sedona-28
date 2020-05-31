@@ -3,15 +3,15 @@
 :root {
 	--white: #ffffff;
 	--extra-light-gray: #f2f2f2;
-	--gray-hover: #EBEBEB;
+	--gray-hover: #ebebeb;
 	--light-gray: #eeeeee;
 	--gray: a9a9a9;
 	--dark-gray: #666666;
 	--light-black: #333333;
 	--black: #000000;
 	--blue: #81b3d2;
-	--dark-blue: #669eC0;
-	--extra-dark-blue: #5496BD;
+	--dark-blue: #669ec0;
+	--extra-dark-blue: #5496bd;
 	--brown: #766357;
 	--dark-brown: #604e43;
 	--extra-dark-brown: #503e33;
@@ -24,8 +24,8 @@ body {
 	padding: 0;
 	font-family: "PT Sans", sans-serif;
 	font-size: 21px;
-	line-height: 26px;
-	font-weight: 400;
+	line-height: 21px;
+	font-weight: bold;
 	color: var(--black);
 	text-transform: uppercase;
 	background-color: var(--extra-light-gray);
@@ -51,9 +51,9 @@ img {
 }
 
 .paragraph {
-	text-align: center;
 	font-size: 14px;
-	line-height: 26px;
+	font-weight: normal;
+	line-height: 21px;
 }
 
 .main-navigation {
@@ -168,6 +168,7 @@ img {
 	line-height: 21px;
 	padding-bottom: 50px;
 	text-align: center;
+	font-weight: normal;
 }
 
 
@@ -234,4 +235,109 @@ color: #fff;
 	line-height: 21px;
 	color: var(--dark-gray);
 	padding: 3px 12px 3px 15px;
+}
+
+.social-icon {
+	display: block;
+	background-color: var(--blue);
+	width: 46px;
+	height: 48px;
+	margin: 6px;
+}
+
+.social-icon:hover {
+	background-color: var(--dark-blue);
+}
+
+.social-icon:active {
+	background-color: var(--extra-dark-blue);
+}
+
+.reasons {
+	text-align: center;
+}
+
+.reasons-list {
+	list-style: none;
+}
+
+.reasons-list-main {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.reasons-list-sub {
+	list-style: none;
+}
+
+.reasons-list-last {
+	background-color: var(--light-gray);
+}
+
+.hotel-filter {
+	color: var(--white);
+	background-image: url("../img/background_blur.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hotel-filter-title {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.hotel-filter-list {
+	list-style: none;
+}
+
+.hotel-filter-input {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	color: var(--white);
+	background-color: transparent;
+}
+
+.hotel-filter-show {
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid var(--white);
+	font-size: 14px;
+	line-height: 21px;
+	background-color: transparent;
+	box-sizing: border-box;
+	border-radius: 2px;
+	padding: 7px 35px 8px 36px;
+}
+
+.found-hotels-title {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.found-hotels-sort {
+	list-style: none;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.found-hotels-sort-item {
+	border-bottom: 1px dashed var(--blue);
+	color: var(--opacity-black);
+}
+
+.found-hotels-sort-item:hover {
+	color: var(--blue);
+}
+
+.found-hotels-sort-item:active {
+	color: var(--black);
+	border-bottom: 0;
+}
+
+.active-item {
+	color: var(--blue);
+	border-bottom: 0;
 }

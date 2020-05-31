@@ -25,65 +25,66 @@
 
 		<main>
 			<h1 class="visually-hidden">Гостиницы</h1>
-			<section>
+			<section class="hotel-filter">
 				<h2 class="visually-hidden">Фильтр гостиниц</h2>
 				<fieldset>
-					<legend>Инфраструктура:</legend>
-					<ul>
+					<legend class="hotel-filter-title">Инфраструктура:</legend>
+					<ul class="hotel-filter-list">
 						<li>
 							<input type="checkbox" id="pool" name="pool" checked>
-							<label for="pool">Бассейн</label>
+							<label for="pool" class="paragraph">Бассейн</label>
 						</li>
 						<li>
 							<input type="checkbox" id="parking" name="parking">
-							<label for="parking">Парковка</label>
+							<label for="parking" class="paragraph">Парковка</label>
 						</li>
 						<li>
 							<input type="checkbox" id="wifi" name="wifi">
-							<label for="wifi">Wi-Fi</label>
+							<label for="wifi" class="paragraph">Wi-Fi</label>
 						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>Тип жилья:</legend>
-					<ul>
+					<legend class="hotel-filter-title">Тип жилья:</legend>
+					<ul class="hotel-filter-list">
 						<li>
 							<input type="checkbox" id="hotel" name="hotel" checked>
-							<label for="hotel">Гостиница</label>
+							<label for="hotel" class="paragraph">Гостиница</label>
 						</li>
 						<li>
 							<input type="checkbox" id="motel" name="motel" checked>
-							<label for="motel">Мотель</label>
+							<label for="motel" class="paragraph">Мотель</label>
 						</li>
 						<li>
 							<input type="checkbox" id="apartments" name="apartments" checked>
-							<label for="apartments">Апартаменты</label>
+							<label for="apartments" class="paragraph">Апартаменты</label>
 						</li>
 					</ul>
 				</fieldset>
 				<form action="https://echo.htmlacademy.ru/courses" method="get">
-					<p>Стоимость в сутки (Р):</p>
+					<p class="hotel-filter-title">Стоимость в сутки (Р):</p>
 					<div>
-						<label for="min-price"  class="visually-hidden">Минимальная цена</label>
-						<input type="text" id="min-price" name="min-price" placeholder="От 0">
-						<label for="max-price"  class="visually-hidden">Максимальная цена</label>
-						<input type="text" id="max-price" name="max-price" placeholder="До 3000">
+						<label for="min-price" class="visually-hidden">Минимальная цена</label>
+						<input type="text" class="hotel-filter-input" id="min-price" name="min-price" placeholder="От 0">
+						<label for="max-price" class="visually-hidden">Максимальная цена</label>
+						<input type="text" class="hotel-filter-input" id="max-price" name="max-price" placeholder="До 3000">
 						<div>
 							<button type="button" aria-label="Установить минимальную цену">От</button>
 							<button type="button" aria-label="Установить максимальную цену">До</button>
 						</div>
 					</div>
-					<button type="submit">Показать</button>
+					<button type="submit" class="hotel-filter-show">Показать</button>
 				</form>
 			</section>
-			<section>
-				<p>Найдено:<span>3</span></p>
-				<ul>
-					<li><a href="#">По цене</a></li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По рейтингу</a></li>
+			<section class="found-hotels">
+				<p class="found-hotels-title">Найдено:<span>3</span></p>
+				<p class="found-hotels-sort">Сортировка:</p>
+				<ul class="found-hotels-sort">
+					<li><a href="#" class="found-hotels-sort-item active-item">По цене</a></li>
+					<li><a href="#" class="found-hotels-sort-item">По типу</a></li>
+					<li><a href="#" class="found-hotels-sort-item">По рейтингу</a></li>
 				</ul>
-				<ul>
+				<ul class="found-hotels-sort">
 					<li><a href="#"><img src="img/icon_up_dir.svg" alt="По возрастанию"></a></li>
 					<li><a href="#"><img src="img/icon_down_dir.svg" alt="По убыванию"></a></li>
 				</ul>
@@ -148,13 +149,13 @@
 				<h2 class="visually-hidden">Давайте дружить!</h2>
 				<ul class="social-list">
 					<li>
-						<a href="#" aria-label="Перейти в Twitter"><img src="img/twitter.svg" alt="Twitter"></a>
+						<a href="#" class="social-icon" aria-label="Перейти в Twitter"><img src="img/twitter.svg" alt="Twitter"></a>
 					</li>
 					<li>
-						<a href="#" aria-label="Перейти в Facebook"><img src="img/facebook.svg" alt="Facebook"></a>
+						<a href="#" class="social-icon" aria-label="Перейти в Facebook"><img src="img/facebook.svg" alt="Facebook"></a>
 					</li>
 					<li>
-						<a href="#" aria-label="Перейти на Youtube"><img src="img/youtube.svg" alt="Youtube"></a>
+						<a href="#" class="social-icon" aria-label="Перейти на Youtube"><img src="img/youtube.svg" alt="Youtube"></a>
 					</li>
 				</ul>
 			</section>
