@@ -117,6 +117,14 @@ img {
 	text-transform: uppercase;
 }
 
+.input:hover {
+	background-color: var(--gray-hover);
+}
+
+.input:focus {
+	background-color: var(--white);
+}
+
 .search-form-label {
 	font-weight: bold;
 	font-size: 14px;
@@ -243,7 +251,8 @@ color: #fff;
 	background-color: var(--blue);
 	width: 46px;
 	height: 48px;
-	margin: 6px;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 .social-icon:hover {
@@ -310,6 +319,11 @@ color: #fff;
 	box-sizing: border-box;
 	border-radius: 2px;
 	padding: 7px 35px 8px 36px;
+}
+
+.hotel-filter-show:hover {
+	color: var(--black);
+	background-color: var(--white);
 }
 
 .found-hotels-title {
