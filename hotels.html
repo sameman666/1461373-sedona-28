@@ -9,9 +9,9 @@
 </head>
 <body>
 	<div class="container">
-		<header>
+		<header class="navigation">
 			<nav class="main-navigation">
-				<a href="index.html">
+				<a class="header-logo" href="index.html">
 					<img src="img/logo.svg" alt="Логотип Седона">
 				</a>
 				<ul class="site-navigation">
@@ -92,44 +92,56 @@
 			<section>
 				<h2 class="visually-hidden">Найденные отели</h2>
 				<ul class="found-hotels-list">
-					<li>
-						<img src="img/amara_resort_&_spa.jpg" alt="Amara Resort & SPA">
-						<div>
+					<li class="hotel-preview">
+						<img src="img/amara_resort_&_spa.jpg" class="hotel-preview-image" alt="Amara Resort & SPA">
+						<div class="hotel-preview-info">
 							<h3 class="hotel-name"><a href="#">Amara Resort & SPA</a></h3>
-							<span class="light-gray-text">Гостиница</span>
-							<span class="light-gray-text">От 4000 Р.</span>
-							<a href="#" class="btn btn-secondary hotel-link">Подробнее</a>
-							<a href="#" class="btn btn-primary hotel-link">Забронировать</a>
+							<p class="hotel-preview-info-type-price">	
+								<span class="light-gray-text type">Гостиница</span>
+								<span class="light-gray-text price">От 4000 Р.</span>
+							</p>
+							<p class="hotel-preview-info-buttons">	
+								<a href="#" class="btn btn-secondary hotel-link">Подробнее</a>
+								<a href="#" class="btn btn-primary hotel-link">Забронировать</a>
+							</p>
 						</div>
-						<div>
+						<div class="hotel-preview-rating">
 							<img src="img/star.svg" alt="Рейтинг">
 							<span class="rating">Рейтинг: 8,5</span>
 						</div>
 					</li>
-					<li>
-						<img src="img/desert_quail_inn.jpg" alt="Desert Quail Inn">
-						<div>
+					<li class="hotel-preview">
+						<img src="img/desert_quail_inn.jpg" class="hotel-preview-image" alt="Desert Quail Inn">
+						<div class="hotel-preview-info">
 							<h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
-							<span class="light-gray-text">Мотель</span>
-							<span class="light-gray-text">От 3000 Р.</span>
-							<a href="#" class="btn btn-secondary hotel-link">Подробнее</a>
-							<a href="#" class="btn btn-primary hotel-link">Забронировать</a>
+							<p class="hotel-preview-info-type-price">
+								<span class="light-gray-text type">Мотель</span>
+								<span class="light-gray-text price">От 3000 Р.</span>
+							</p>
+							<p class="hotel-preview-info-buttons">
+								<a href="#" class="btn btn-secondary hotel-link">Подробнее</a>
+								<a href="#" class="btn btn-primary hotel-link">Забронировать</a>
+							</p>
 						</div>
-						<div>
+						<div class="hotel-preview-rating">
 							<img src="img/star.svg" alt="Рейтинг">
 							<span class="rating">Рейтинг: 8,9</span>
 						</div>
 					</li>
-					<li>
-						<img src="img/villas_at_poco_diablo.jpg" alt="Villas At Pococ Diablo">
-						<div>
+					<li class="hotel-preview">
+						<img src="img/villas_at_poco_diablo.jpg"  class="hotel-preview-image" alt="Villas At Pococ Diablo">
+						<div class="hotel-preview-info">
 							<h3 class="hotel-name"><a href="#">Villas At Pococ Diablo</a></h3>
-							<span class="light-gray-text">Апартаменты</span>
-							<span class="light-gray-text">От 2000 Р.</span>
-							<a href="#" class="btn btn-secondary hotel-link">Подробнее</a>
-							<a href="#" class="btn btn-primary hotel-link">Забронировать</a>
+							<p class="hotel-preview-info-type-price">
+								<span class="light-gray-text type">Апартаменты</span>
+								<span class="light-gray-text price">От 2000 Р.</span>
+							</p>
+							<p class="hotel-preview-info-buttons">
+								<a href="#" class="btn btn-secondary hotel-link">Подробнее</a>
+								<a href="#" class="btn btn-primary hotel-link">Забронировать</a>
+							</p>
 						</div>
-						<div>
+						<div class="hotel-preview-rating">
 							<img src="img/star.svg" alt="Рейтинг">
 							<span class="rating">Рейтинг: 9,2</span>
 						</div>
@@ -139,11 +151,13 @@
 
 		</main>
 
-		<footer>
+		<footer class="footer">
 			<section class="contacts">
 				<h2 class="visually-hidden">Связаться с нами</h2>
-				<a href="#">#VISITSEDONA</a>
-				<a href="#">ТЕЛ: +7(495)666-01-66</a>
+				<div class="contact-links">	
+					<a href="#">#VISITSEDONA</a>
+					<a href="#">ТЕЛ: +7(495)666-01-66</a>
+				</div>
 			</section>
 			<section class="social">
 				<h2 class="visually-hidden">Давайте дружить!</h2>

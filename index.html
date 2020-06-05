@@ -9,9 +9,9 @@
 </head>
 <body>
 	<div class="container">
-		<header>
+		<header class="navigation">
 			<nav class="main-navigation">
-				<a>
+				<a class="header-logo">
 					<img src="img/logo.svg" alt="Логотип Седона">
 				</a>
 				<ul class="site-navigation">
@@ -23,9 +23,9 @@
 			</nav>
 		</header>
 
-		<main>
+		<main class="main-content">
 			<section class="welcome">
-				<img src="img/welcome.svg" alt="Welcome to the gorgeous Sedona">
+				<img src="img/welcome.svg" class="welcome-logo" alt="Welcome to the gorgeous Sedona">
 			</section>
 			<section class="intro">
 				<h1 class="title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
@@ -35,7 +35,7 @@
 				<ol class="reasons-list">
 					<li>
 						<div class="reasons-list-main">
-							<p>Настоящий городок</p>
+							<p class="paragraph-title">Настоящий городок</p>
 							<p class="paragraph">Седона - не аттракцион для туристов, там течет своя жизнь<p>
 						</div>
 						<div>
@@ -43,22 +43,22 @@
 						</div>
 						<ul class="reasons-list-sub">
 							<li>
-								<p>Жилье</p>
+								<p class="paragraph-title">Жилье</p>
 								<p class="paragraph">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 							</li>
 							<li>
-								<p>Еда</p>
+								<p class="paragraph-title">Еда</p>
 								<p class="paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 							</li>
 							<li>
-								<p>Сувениры</p>
+								<p class="paragraph-title">Сувениры</p>
 								<p class="paragraph">Не только китайского, но и местного производства!</p>
 							</li>
 						</ul>
 					</li>
 					<li>
 						<div class="reasons-list-main">
-							<p>Там есть мост дьявола</p>
+							<p class="paragraph-title">Там есть мост дьявола</p>
 							<p class="paragraph">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</div>
 						<div>
@@ -67,48 +67,46 @@
 					</li>
 						<li>
 							<div class="reasons-list-last">
-								<p>Небольшая площадь</p>
+								<p class="paragraph-title">Небольшая площадь</p>
 								<p class="paragraph">Все достопримечательности находятся очень близко</p>
 							</div>	
 						</li>
 						<li>
 							<div class="reasons-list-last">
-								<p>Красивая дорога</p>
+								<p class="paragraph-title">Красивая дорога</p>
 								<p class="paragraph">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
 							</div>
 						</li>
 						<li>
 							<div class="reasons-list-last">
-								<p>Мало туристов</p>
+								<p class="paragraph-title">Мало туристов</p>
 								<p class="paragraph">Большинство едет в гранд каньон и толпится там</p>
 							</div>
 						</li>
 				</ol>
 			</section>
 			<section class="hotel-search">
-					<p class="hotel-search-title">Заинтересовались?<p>
-					<p class="light-gray-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<p class="hotel-search-title">Заинтересовались?</p>
+				<p class="light-gray-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<div>
 					<a href="#" class="btn btn-primary">Поиск гостиницы в седоне</a>
 					<form action="https://echo.htmlacademy.ru" class="hotel-search-form"  method="post">
-						<p>
+						<p class="form-paragraph">
 							<label for="date_checkin" class="search-form-label">Дата заезда:</label>
 							<input type="text" class="input" id="date_checkin" name="date_checkin" placeholder="24 Апреля 2017">
 							<button type="button" aria-label="Выбрать дату заезда"></button>
 						</p>
-						<p>
+						<p class="form-paragraph">
 							<label for="date_checkout" class="search-form-label">Дата выезда:</label>
 							<input type="text" class="input" id="date_checkout" name="date_checkout" placeholder="4 Июля 2017">
 							<button type="button" aria-label="Выбрать дату выезда"></button>
 						</p>
-						<p>
+						<p class="form-paragraph">
 							<label for="adults" class="search-form-label">Взрослые:</label>
 							<button type="button" aria-label="Уменьшить">-</button>
 							<input type="text" class="input" id="adults" name="adults" placeholder="2">
 							<button type="button" aria-label="Увеличить">+</button>
-						</p>
-						<p>
-							<label for="kids" class="search-form-label">Дети:</label>
+							<label for="kids" class="search-form-label kids">Дети:</label>
 							<button type="button" aria-label="Уменьшить">-</button>
 							<input type="text" class="input" id="kids" name="kids" placeholder="0">
 							<button type="button" aria-label="Увеличить">+</button>
@@ -122,11 +120,13 @@
 			</section>
 		</main>
 
-		<footer>
+		<footer class="footer">
 			<section class="contacts">
 				<h2 class="visually-hidden">Связаться с нами</h2>
-				<a href="#">#VISITSEDONA</a>
-				<a href="#">ТЕЛ: +7(495)666-01-66</a>
+				<div class="contact-links">	
+					<a href="#">#VISITSEDONA</a>
+					<a href="#">ТЕЛ: +7(495)666-01-66</a>
+				</div>
 			</section>
 			<section class="social">
 				<h2 class="visually-hidden">Давайте дружить!</h2>
