@@ -27,7 +27,7 @@
 			<h1 class="visually-hidden">Гостиницы</h1>
 			<section class="hotel-filter">
 				<h2 class="visually-hidden">Фильтр гостиниц</h2>
-				<fieldset>
+				<fieldset class="infrastructure">
 					<legend class="hotel-filter-title">Инфраструктура:</legend>
 					<ul class="hotel-filter-list">
 						<li>
@@ -44,7 +44,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset>
+				<fieldset class="apartment-type">
 					<legend class="hotel-filter-title">Тип жилья:</legend>
 					<ul class="hotel-filter-list">
 						<li>
@@ -61,14 +61,14 @@
 						</li>
 					</ul>
 				</fieldset>
-				<form action="https://echo.htmlacademy.ru/courses" method="get">
+				<form action="https://echo.htmlacademy.ru/courses" class="price-per-day" method="get">
 					<p class="hotel-filter-title">Стоимость в сутки (Р):</p>
 					<div>
 						<label for="min-price" class="visually-hidden">Минимальная цена</label>
 						<input type="text" class="hotel-filter-input" id="min-price" name="min-price" placeholder="От 0">
 						<label for="max-price" class="visually-hidden">Максимальная цена</label>
 						<input type="text" class="hotel-filter-input" id="max-price" name="max-price" placeholder="До 3000">
-						<div>
+						<div class="range">
 							<button type="button" aria-label="Установить минимальную цену">От</button>
 							<button type="button" aria-label="Установить максимальную цену">До</button>
 						</div>
@@ -84,7 +84,7 @@
 					<li><a href="#" class="found-hotels-sort-item">По типу</a></li>
 					<li><a href="#" class="found-hotels-sort-item">По рейтингу</a></li>
 				</ul>
-				<ul class="found-hotels-sort">
+				<ul class="found-hotels-sort-dir">
 					<li><a href="#"><img src="img/icon_up_dir.svg" alt="По возрастанию"></a></li>
 					<li><a href="#"><img src="img/icon_down_dir.svg" alt="По убыванию"></a></li>
 				</ul>
