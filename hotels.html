@@ -27,55 +27,65 @@
 			<h1 class="visually-hidden">Гостиницы</h1>
 			<section class="hotel-filter">
 				<h2 class="visually-hidden">Фильтр гостиниц</h2>
-				<fieldset class="infrastructure">
-					<legend class="hotel-filter-title">Инфраструктура:</legend>
-					<ul class="hotel-filter-list">
-						<li>
-							<input type="checkbox" id="pool" name="pool" checked>
-							<label for="pool" class="paragraph">Бассейн</label>
-						</li>
-						<li>
-							<input type="checkbox" id="parking" name="parking">
-							<label for="parking" class="paragraph">Парковка</label>
-						</li>
-						<li>
-							<input type="checkbox" id="wifi" name="wifi">
-							<label for="wifi" class="paragraph">Wi-Fi</label>
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset class="apartment-type">
-					<legend class="hotel-filter-title">Тип жилья:</legend>
-					<ul class="hotel-filter-list">
-						<li>
-							<input type="checkbox" id="hotel" name="hotel" checked>
-							<label for="hotel" class="paragraph">Гостиница</label>
-						</li>
-						<li>
-							<input type="checkbox" id="motel" name="motel" checked>
-							<label for="motel" class="paragraph">Мотель</label>
-						</li>
-						<li>
-							<input type="checkbox" id="apartments" name="apartments" checked>
-							<label for="apartments" class="paragraph">Апартаменты</label>
-						</li>
-					</ul>
-				</fieldset>
-				<form action="https://echo.htmlacademy.ru/courses" class="price-per-day" method="get">
-					<p class="hotel-filter-title">Стоимость в сутки (Р):</p>
-					<div>
-						<label for="min-price" class="visually-hidden">Минимальная цена</label>
-						<input type="text" class="hotel-filter-input" id="min-price" name="min-price" placeholder="От 0">
-						<label for="max-price" class="visually-hidden">Максимальная цена</label>
-						<input type="text" class="hotel-filter-input" id="max-price" name="max-price" placeholder="До 3000">
-						<div class="range">
-							<button type="button" aria-label="Установить минимальную цену">От</button>
-							<button type="button" aria-label="Установить максимальную цену">До</button>
-						</div>
-					</div>
-					<button type="submit" class="hotel-filter-show">Показать</button>
+				<form action="https://echo.htmlacademy.ru/courses" class="filters" method="get">
+					<fieldset class="filters-options">
+						<legend class="hotel-filter-title">Инфраструктура:</legend>
+						<ul class="hotel-filter-list">
+							<li>
+								<input type="checkbox" id="pool" name="pool" checked>
+								<label for="pool" class="paragraph">Бассейн</label>
+							</li>
+							<li>
+								<input type="checkbox" id="parking" name="parking">
+								<label for="parking" class="paragraph">Парковка</label>
+							</li>
+							<li>
+								<input type="checkbox" id="wifi" name="wifi">
+								<label for="wifi" class="paragraph">Wi-Fi</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filters-options">
+						<legend class="hotel-filter-title">Тип жилья:</legend>
+						<ul class="hotel-filter-list">
+							<li>
+								<input type="checkbox" id="hotel" name="hotel" checked>
+								<label for="hotel" class="paragraph">Гостиница</label>
+							</li>
+							<li>
+								<input type="checkbox" id="motel" name="motel" checked>
+								<label for="motel" class="paragraph">Мотель</label>
+							</li>
+							<li>
+								<input type="checkbox" id="apartments" name="apartments" checked>
+								<label for="apartments" class="paragraph">Апартаменты</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filters-range">
+						<legend class="hotel-filter-title">Стоимость в сутки (Р):</legend>
+							<div>
+								<div class="filters-range-info">
+									<div class="filters-range-price">
+										<label for="min-price" class="paragraph">От</label>
+										<input type="text" class="hotel-filter-input" id="min-price" name="min-price" value="0">
+									</div>
+									<div class="filters-range-price ">
+										<label for="max-price" class="paragraph">До</label>
+										<input type="text" class="hotel-filter-input" id="max-price" name="max-price" value="3000">
+									</div>
+								</div>
+								<div class="filters-range-buttons">
+									<button type="button" aria-label="Установить минимальную цену">От</button>
+									<button type="button" aria-label="Установить максимальную цену">До</button>
+								</div>
+							</div>
+							<button type="submit" class="hotel-filter-show">Показать</button>
+						</form>
+					</fieldset>
 				</form>
 			</section>
+			
 			<section class="found-hotels">
 				<p class="found-hotels-title">Найдено:<span>3</span></p>
 				<p class="found-hotels-sort">Сортировка:</p>

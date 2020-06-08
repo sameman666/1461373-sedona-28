@@ -54,19 +54,21 @@ img {
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
+	margin: 0;
 }
 
 .paragraph {
 	font-size: 14px;
 	line-height: 21px;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .paragraph-title {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
-	margin-top: 0;
+	margin: 0;
+	margin-bottom: 25px;
 }
 
 .main-navigation {
@@ -204,11 +206,16 @@ img {
 	display: none;
 }
 
+.social {
+	margin: auto 0;
+}
+
 .social-list {
 	list-style: none;
 	display: flex;
 	padding: 0;
 	justify-content: center;
+	margin: 0;
 }
 
 .contacts {
@@ -383,6 +390,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
+	margin: 0;
 }
 
 .reasons-list-block {
@@ -402,6 +410,8 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 .reasons-list-sub {
@@ -410,6 +420,10 @@ img {
 	display: flex;
 	min-height: 334px;
 	align-items: center;
+}
+
+.reasons-list-sub li {
+	width: 400px;
 }
 
 .reasons-list-last {
@@ -426,8 +440,6 @@ img {
 	background-image: url("../img/background_blur.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
-	padding: 27px 72px 31px 72px;
 	min-height: 217px;
 	box-sizing: border-box;
 }
@@ -436,6 +448,7 @@ img {
 	font-size: 16px;
 	line-height: 21px;
 	margin: 0;
+	padding: 0;
 	text-align: left;
 	font-weight: bold;
 }
@@ -451,11 +464,15 @@ img {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	text-align: center;
 	color: var(--white);
 	background-color: transparent;
-	margin-top: 11px;
-	border: 2px solid var(--white);
+	border: 0;
+	width: 50px;
+	margin-left: 3px;
+}
+
+.hotel-filter-input:focus {
+	outline: none;
 }
 
 .hotel-filter-show {
@@ -469,10 +486,8 @@ img {
 	border-radius: 2px;
 	padding: 7px 35px 8px 36px;
 	margin-top: 10px;
-}
-
-.range {
-	margin-top: 11px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hotel-filter-show:hover {
@@ -552,6 +567,7 @@ ul.found-hotels-sort {
 .footer {
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+	min-height: 120px;
 }
 
 .hotel-preview {
@@ -599,20 +615,49 @@ ul.found-hotels-sort {
 	flex-direction: column;
 }
 
-.infrastructure {
-	border: 0;
-	padding: 0;
-	margin: 0;
+.filters {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 72px;
 }
 
-.apartment-type {
-	margin: 0;
-	margin-left: 119px;
+.filters-options {
+  margin: 0;
+	margin-right: 20px;
+  box-sizing: border-box;
+  width: 20%;
 	border: 0;
 	padding: 0;
 }
 
-.price-per-day {
+.filters-range {
+  margin: 0;
 	margin-left: auto;
+  box-sizing: border-box;
+  width: 30%;
+	border: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.filters-range-info {
+	display: flex;
+	width: 314px;
+	height: 32px;
+	border: 2px solid var(--white);
+	border-radius: 2px;
+	align-items: center;
+	margin-top: 11px;
+}
+
+.filters-range-price {
+	flex-grow: 1;
 	text-align: center;
+}
+
+.filters-range-buttons {
+	margin-top: 11px;
+	display: flex;
+	justify-content: center;
 }
