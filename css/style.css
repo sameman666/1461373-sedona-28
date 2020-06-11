@@ -399,6 +399,10 @@ img {
 	padding: 13px 13px;
 }
 
+.social-icon a:active path {
+	fill: var(--opacity-black)
+}
+
 .reasons {
 	text-align: center;
 }
