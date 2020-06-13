@@ -93,7 +93,7 @@
 				<div>
 					<a href="#" class="btn btn-primary btn-large">Поиск гостиницы в седоне</a>
 					<form action="https://echo.htmlacademy.ru" class="hotel-search-form"  method="post">
-						<p class="form-paragraph">
+						<div class="form-paragraph">
 							<label for="date_checkin" class="search-form-label">Дата заезда:</label>
 							<input type="text" class="input big-input" id="date_checkin" name="date_checkin" placeholder="24 Апреля 2017">
 							<button type="button" aria-label="Выбрать дату заезда" class="form-paragraph-btn calendar">
@@ -102,8 +102,8 @@
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
 								</svg>
 							</button>
-						</p>
-						<p class="form-paragraph">
+						</div>
+						<div class="form-paragraph">
 							<label for="date_checkout" class="search-form-label">Дата выезда:</label>
 							<input type="text" class="input big-input" id="date_checkout" name="date_checkout" placeholder="4 Июля 2017">
 							<button type="button" aria-label="Выбрать дату выезда" class="form-paragraph-btn calendar">
@@ -112,33 +112,37 @@
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
 								</svg>
 							</button>
-						</p>
-						<p class="form-paragraph">
+						</div>
+						<div class="form-paragraph">
 							<label for="adults" class="search-form-label">Взрослые:</label>
-							<button type="button" aria-label="Уменьшить" class="form-paragraph-btn minus minus-adults">
-								<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect width="12" height="3" fill="#A9A9A9"/>
-								</svg>									
-							</button>
-							<input type="text" class="input small-input" id="adults" name="adults" placeholder="2">
-							<button type="button" aria-label="Увеличить" class="form-paragraph-btn plus-adults">
-								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-								</svg>
-							</button>
+							<div class="form-paragraph-adults">
+								<button type="button" aria-label="Уменьшить" class="form-paragraph-btn minus">
+									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="12" height="3" fill="#A9A9A9"/>
+									</svg>									
+								</button>
+								<input type="text" class="input small-input" id="adults" name="adults" placeholder="2">
+								<button type="button" aria-label="Увеличить" class="form-paragraph-btn plus">
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+									</svg>
+								</button>
+							</div>
 							<label for="kids" class="search-form-label kids">Дети:</label>
-							<button type="button" aria-label="Уменьшить" class="form-paragraph-btn minus minus-kids">
-								<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect width="12" height="3" fill="#A9A9A9"/>
-								</svg>
-							</button>
-							<input type="text" class="input small-input" id="kids" name="kids" placeholder="0">
-							<button type="button" aria-label="Увеличить" class="form-paragraph-btn plus-kids">
-								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-								</svg>
-							</button>
-						</p>
+							<div class="form-paragraph-adults">
+								<button type="button" aria-label="Уменьшить" class="form-paragraph-btn minus">
+									<svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="12" height="3" fill="#A9A9A9"/>
+									</svg>
+								</button>
+								<input type="text" class="input small-input" id="kids" name="kids" placeholder="0">
+								<button type="button" aria-label="Увеличить" class="form-paragraph-btn plus">
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+									</svg>
+								</button>
+							</div>
+						</div>
 						<button type="submit" class="btn btn-secondary">Найти</button>
 					</form>
 				</div>
@@ -148,12 +152,12 @@
 			</section>
 		</main>
 
-		<footer class="footer">
+		<footer class="footer footer-index">
 			<section class="contacts">
 				<h2 class="visually-hidden">Связаться с нами</h2>
 				<div class="contact-links">	
 					<a href="#">#VISITSEDONA</a>
-					<a href="#">ТЕЛ: +7(495)666-01-66</a>
+					<a href="#">ТЕЛ: +7(495) 666-01-66</a>
 				</div>
 			</section>
 			<section class="social">
