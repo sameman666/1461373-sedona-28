@@ -32,15 +32,15 @@
 						<legend class="hotel-filter-title">Инфраструктура:</legend>
 						<ul class="hotel-filter-list">
 							<li>
-								<input type="checkbox" id="pool" name="pool" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" id="pool" name="pool" checked>
 								<label for="pool" class="paragraph">Бассейн</label>
 							</li>
 							<li>
-								<input type="checkbox" id="parking" name="parking">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" id="parking" name="parking">
 								<label for="parking" class="paragraph">Парковка</label>
 							</li>
 							<li>
-								<input type="checkbox" id="wifi" name="wifi">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" id="wifi" name="wifi">
 								<label for="wifi" class="paragraph">Wi-Fi</label>
 							</li>
 						</ul>
@@ -49,15 +49,15 @@
 						<legend class="hotel-filter-title">Тип жилья:</legend>
 						<ul class="hotel-filter-list">
 							<li>
-								<input type="checkbox" id="hotel" name="hotel" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" id="hotel" name="hotel" checked>
 								<label for="hotel" class="paragraph">Гостиница</label>
 							</li>
 							<li>
-								<input type="checkbox" id="motel" name="motel" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" id="motel" name="motel" checked>
 								<label for="motel" class="paragraph">Мотель</label>
 							</li>
 							<li>
-								<input type="checkbox" id="apartments" name="apartments" checked>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" id="apartments" name="apartments" checked>
 								<label for="apartments" class="paragraph">Апартаменты</label>
 							</li>
 						</ul>
@@ -66,18 +66,21 @@
 						<legend class="hotel-filter-title">Стоимость в сутки (Р):</legend>
 							<div>
 								<div class="filters-range-info">
-									<div class="filters-range-price">
+									<div class="filters-range-price min-price">
 										<label for="min-price" class="paragraph">От</label>
 										<input type="text" class="hotel-filter-input" id="min-price" name="min-price" value="0">
 									</div>
-									<div class="filters-range-price ">
+									<div class="filters-range-price max-price">
 										<label for="max-price" class="paragraph">До</label>
 										<input type="text" class="hotel-filter-input" id="max-price" name="max-price" value="3000">
 									</div>
 								</div>
 								<div class="filters-range-buttons">
-									<button type="button" aria-label="Установить минимальную цену">От</button>
-									<button type="button" aria-label="Установить максимальную цену">До</button>
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
 								</div>
 							</div>
 							<button type="submit" class="hotel-filter-show">Показать</button>
@@ -94,11 +97,23 @@
 					<li><a href="#" class="found-hotels-sort-item">По рейтингу</a></li>
 				</ul>
 				<ul class="found-hotels-sort-dir">
-					<li><a href="#"><img src="img/icon_up_dir.svg" alt="По возрастанию"></a></li>
-					<li><a href="#"><img src="img/icon_down_dir.svg" alt="По убыванию"></a></li>
+					<li>
+						<a href="#" aria-label="По возрастанию">
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+							</svg>
+						</a>
+					</li>
+					<li class="active-dir">
+						<a href="#" aria-label="По убыванию">
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
+							</svg>								
+						</a>
+					</li>
 				</ul>
 			</section>
-			<section>
+			<section class="found-hotels-preview">
 				<h2 class="visually-hidden">Найденные отели</h2>
 				<ul class="found-hotels-list">
 					<li class="hotel-preview">
@@ -163,7 +178,6 @@
 					</li>
 				</ul>
 			</section>
-
 		</main>
 
 		<footer class="footer">
