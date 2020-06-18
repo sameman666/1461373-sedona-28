@@ -29,7 +29,7 @@ body {
 	min-width: 1200px;
 	margin: 0;
 	padding: 0;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -438,7 +438,6 @@ img {
 
 .social-icon a {
 	display: block;
-	padding-bottom 13px;
 	padding-top: 5px;
 }
 
@@ -631,6 +630,7 @@ img {
 	margin-top: 33px;
 	margin-left: 85px;
 	cursor: pointer;
+	width: min-content;
 }
 
 .hotel-filter-show:hover {
@@ -964,6 +964,8 @@ ul.found-hotels-sort {
 	width: 5px;
 	height: 5px;
 	border: 9px solid var(--white);
+	margin-left: -1px;
+	margin-top: -1px;
 }
 
 .toggle-max {
