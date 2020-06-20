@@ -57,6 +57,7 @@ img {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	width: 1200px;
+	min-height: 100vh;
 	margin: 0 auto;
 	box-shadow: 0px 5px 15px var(--shadow-main);
 }
@@ -67,6 +68,9 @@ img {
 	font-size: 21px;
 	line-height: 27px;
 	margin: 0;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .paragraph {
@@ -82,7 +86,7 @@ img {
 	line-height: 21px;
 	margin: 0;
 	margin-top: 35px;
-	width: 160px;
+	width: 150px;
 	align-self: center;
 }
 
@@ -359,12 +363,12 @@ img {
 	text-transform: uppercase; 
 	padding: 16px 10px;
 	cursor: pointer;
-	margin-top: 30px;
+	margin-top: 27px;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
-	color: #fff;
+	color: var(--white);
 }
 
 .btn-primary:active,
@@ -437,12 +441,11 @@ img {
 }
 
 .social-icon a {
-	display: block;
-	padding-top: 5px;
+	margin: 0;
 }
 
-.social-icon a:active path {
-	fill: var(--opacity-black)
+.social-icon a:active svg {
+	opacity: 0.3;
 }
 
 .reasons {
@@ -587,12 +590,34 @@ img {
 	top: 1px;
 }
 
+.filter-input-checkbox:disabled + label::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox_off_inactive.svg");
+	background-repeat: no-repeat;
+	left: -1px;
+	top: 1px;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
 	position: absolute;
 	width: 27px;
 	height: 23px;
 	background-image: url("../img/checkbox_on.svg");
+	background-repeat: no-repeat;
+	left: -1px;
+	top: 1px;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox_on_inactive.svg");
 	background-repeat: no-repeat;
 	left: -1px;
 	top: 1px;
@@ -729,7 +754,7 @@ ul.found-hotels-sort {
 	align-items: center;
 	position: relative;
 	margin: 0;
-	margin-bottom: 28px;
+	margin-bottom: 29px;
 }
 
 .form-paragraph-adults {
@@ -741,11 +766,20 @@ ul.found-hotels-sort {
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
+	width: 38px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.form-paragraph-btn svg {
+	display: block;
 }
 
 .calendar {
-	right: 3px;
-	top: 6px;
+	right: 1px;
 }
 
 .form-paragraph-btn:hover path{
@@ -756,14 +790,9 @@ ul.found-hotels-sort {
 	fill: var(--blue);
 }
 
-.minus {
-	left: 6px;
-	top: 9px;
-}
-
 .plus {
-	right: 8px;
-	top: 13px;
+	right: 1px;
+	top: 1px;
 }
 
 .minus:hover rect {
