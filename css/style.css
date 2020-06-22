@@ -204,6 +204,7 @@ img {
 	transform: translateY(-86px) translateX(-50%);
 	opacity: 0;
 	transition: transform 0.5s ease, opacity 0.5s;
+	pointer-events: none;
 }
 
 .form-error {

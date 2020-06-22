@@ -5,6 +5,8 @@ var dateCheckout = document.querySelector("#date_checkout");
 var adults = document.querySelector("#adults");
 var kids = document.querySelector("#kids");
 
+form.classList.add("form-hide");
+
 searchLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   form.classList.toggle("form-hide");
