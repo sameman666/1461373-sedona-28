@@ -102,6 +102,7 @@ img {
 .site-navigation {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	width: 100%;
 	min-height: 56px;
@@ -114,12 +115,12 @@ img {
 	width: 228px;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(4n+3) {
 	margin-left: auto;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4)
+.site-navigation li:nth-child(4n+3),
+.site-navigation li:nth-child(4n+4)
 {
 	text-align: right;
 }
@@ -195,6 +196,40 @@ img {
 	top: 100%;
 	left: 50%;
 	transform: translateX(-50%);
+	opacity: 1;
+	transition: transform 0.5s ease, opacity 0.5s;
+}
+
+.form-hide {
+	transform: translateY(-86px) translateX(-50%);
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s;
+}
+
+.form-error {
+	animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-51%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-49%);
+  }
 }
 
 .input {
@@ -332,6 +367,10 @@ img {
 	margin: 0;
 }
 
+.search-btn {
+	position: relative;
+	z-index: 1;
+}
 
 .btn {
 	display: inline-block;
