@@ -171,6 +171,7 @@ img {
 	text-align: center;
 	padding-top: 57px;
 	position: relative;
+	z-index: 1;
 }
 
 .hotel-search .light-gray-text {
@@ -841,6 +842,16 @@ ul.found-hotels-sort {
 
 .minus:active rect {
 	fill: var(--blue)
+}
+
+.map {
+	position: relative;
+}
+
+.map iframe {
+	display: block;
+	position: absolute;
+	top: 0;
 }
 
 .map img {
