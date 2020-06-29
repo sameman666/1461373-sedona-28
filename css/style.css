@@ -514,6 +514,7 @@ img {
 
 .reasons {
 	text-align: center;
+	background-color: var(--light-gray);
 }
 
 .reasons-list {
@@ -561,10 +562,12 @@ img {
 .reasons-list-sub {
 	list-style: none;
 	padding: 0;
+	padding-bottom: 82px;
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 330px;
 	box-sizing: border-box;
+	background-color: var(--white);
 }
 
 .reasons-list-sub li {
@@ -596,7 +599,6 @@ img {
 }
 
 .reasons-list-last {
-	background-color: var(--light-gray);
 	width: 400px;
 	min-height: 256px;
 	display: flex;
